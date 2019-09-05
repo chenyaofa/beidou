@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 设置为IUserDao接口方法提供sql语句配置 -->
+<mapper namespace="com.lnp.dao.CommissionDao">
+
+
+    <select id="selectCommission" resultType="com.lnp.entity.CommissionInformation">
+        select *,orderTime as time,(select platformName from platform_information where platform_information.platformId=commission_information.platformId) platformName,(select storeName from store_information c where c.storeId=commission_information.storeId ) as storeName from commission_information
+        <trim prefix="where" prefixOverrides="and | or">
+            <if test="storeId != null and storeId != ''">
+                and storeId = #{storeId}
+            </if>
+            <if test="orderId != null and orderId != ''">
+                and orderId like CONCAT ('%',#{orderId},'%')
+            </if>
+            <if test="platformId != null and platformId != ''">
+                and platformId = #{platformId}
+            </if>
+            <if test="beginTime != null and beginTime != ''">
+                and orderTime > #{beginTime}
+            </if>
+            <if test="overTime != null and overTime != ''">
+                and #{overTime} > orderTime
+            </if>
+            <if test="timeNumber !=null and timeNumber!=''">
+                and orderTime > #{timeNumber}
+            </if>
+        </trim>
+        ORDER BY orderTime DESC
+        LIMIT #{pageIndex},#{pagesize}
+    </select>
+
+    <select id="selectCommissionCount" resultType="int">
+        select count(1) from commission_information
+        <trim prefix="where" prefixOverrides="and | or">
+            <if test="storeId != null and storeId != ''">
+                and storeId = #{storeId}
+            </if>
+            <if test="orderId != null and orderId != ''">
+                and orderId like CONCAT ('%',#{orderId},'%')
+            </if>
+            <if test="platformId != null and platformId != ''">
+                and platformId = #{platformId}
+            </if>
+            <if test="beginTime != null and beginTime != ''">
+                and orderTime > #{beginTime}
+            </if>
+            <if test="overTime != null and overTime != ''">
+                and #{overTime} > orderTime
+            </if>
+            <if test="timeNumber !=null and timeNumber!=''">
+                and orderTime > #{timeNumber}
+            </if>
+        </trim>
+    </select>
+
+    <insert id="InsertCommission" parameterType="CommissionInformation">
+        insert into commission_information(orderId,tradeName,tradePrices,tradeOfGoods,platformId,orderTime,storeId,brokerage)
+        values(#{orderId},#{tradeName},#{tradePrices},#{tradeOfGoods},#{platformId},#{orderTime},#{storeId},#{brokerage})
+    </insert>
+
+    <delete id="deleteCommission" >
+        delete from commission_information where orderId = #{orderId}
+    </delete>
+
+
+    <select id="quickSelect" resultType="CommissionInformation">
+        select *,(select storeName from store_information c where c.storeId=commission_information.storeId ) as storeName from commission_information
+        where orderTime > #{timeNumber}
+        LIMIT #{pageIndex},#{pagesize}
+    </select>
+
+    <select id="quickSelectCount" >
+        select count(1) from commission_information
+        where orderTime > #{timeNumber}
+    </select>
+
+    <insert id="apply" parameterType="WithdrawInformation">
+        insert into withdraw_information(storeId,getTime,money,accountType,cardNumber,payee,withdrawalState)
+        values(#{storeId},#{getTime},#{money},#{accountType},#{cardNumber},#{payee},#{withdrawalState})
+    </insert>
+
+    <select id="selectWith" resultType="WithdrawInformation">
+        select *,getTime as time,(select storeName from store_information c where c.storeId=withdraw_information.storeId ) as storeName from withdraw_information
+        <trim prefix="where" prefixOverrides="and | or">
+            <if test="storeId != null and storeId != ''">
+                and storeId = #{storeId}
+            </if>
+            <if test="beginTime != null and beginTime != ''">
+                and getTime > #{beginTime}
+            </if>
+            <if test="overTime != null and overTime != ''">
+                and #{overTime} > getTime
+            </if>
+            <if test="timeNumber !=null and timeNumber!=''">
+                and getTime > #{timeNumber}
+            </if>
+            <if test="withdrawalState != null and withdrawalState!=''">
+                and withdrawalState = #{withdrawalState}
+            </if>
+        </trim>
+        ORDER BY getTime DESC
+        LIMIT #{pageIndex},#{pagesize}
+    </select>
+
+    <select id="selectWithCount" resultType="int">
+        select count(1) from withdraw_information
+        <trim prefix="where" prefixOverrides="and | or">
+            <if test="storeId != null and storeId != ''">
+                and storeId = #{storeId}
+            </if>
+            <if test="beginTime != null and beginTime != ''">
+                and getTime > #{beginTime}
+            </if>
+            <if test="overTime != null and overTime != ''">
+                and #{overTime} > getTime
+            </if>
+            <if test="timeNumber !=null and timeNumber!=''">
+                and getTime > #{timeNumber}
+            </if>
+            <if test="withdrawalState != null and withdrawalState!=''">
+                and withdrawalState = #{withdrawalState}
+            </if>
+        </trim>
+    </select>
+
+    <update id="updateStatus">
+        update withdraw_information set withdrawalState = #{status} where id=#{id}
+    </update>
+
+
+</mapper>

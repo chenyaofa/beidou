@@ -1,0 +1,102 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+/*权限等级布局*/
+.title a{
+	display: inline-block;
+	width: 120px;
+	text-align: center;
+}
+.title:hover a{
+	border-bottom: 0;
+}
+
+
+.container{
+	position: relative;
+	width: 100%;
+	height: 1200px;
+	background-color: #f1f4f4;
+}
+
+.top{
+	position: absolute;
+	left: 210px;
+	width: 90%;
+	height: 50px;
+	color: #58ade0;
+	background-color: #ffffff;
+}
+.uls{
+	position: absolute;
+	list-style-type:none ;
+	font-size: 17px;
+	margin-left:95px;
+	top: 15px;
+}
+.mid{
+	float: left;
+	margin:10px 0 10px 5px;
+}
+.mid1{
+	width: 550px;
+	height: 180px;
+	display: inline-block;
+	margin: 5px;
+	background-color: #ffffff;
+}
+.mid1 ul li{
+	list-style-type: circle;
+	height: 25px;
+	margin-bottom: 10px;
+	cursor: pointer;
+	margin-left: 60px;
+}
+.mid1 ul li:hover{
+	color: #009688;
+}
+
+.p1{
+	font-size: 14px;
+	line-height: 30px;
+}
+.p2{
+	border-bottom: 2px solid #12b6b2;
+	height: 35px;
+	font-size: 22px;
+	padding-top:10px ;
+	padding-left: 50px;
+}
+
+.p3{
+	margin: 10px 10px 10px 50px;
+	width: 30px;
+	height: 15px;
+}
+.low{
+	position: absolute;
+	width: 1700px;
+	height: 563px;
+	top: 260px;
+	left: 10px;
+	background-color: #ffffff;
+}
+.low1{
+	position: absolute;
+	top: 450px;
+	left: 38%;
+}
+#xinxi,
+#xinxi1{
+	width: 120px;
+	height: 40px;
+	background-color: #4aaeff;
+	color: black;
+	border: none;
+	border-radius: 3px;
+}
+#xinxi1{
+	color: #ffffff;
+	margin-left: 200px;
+}

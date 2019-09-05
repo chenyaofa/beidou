@@ -1,0 +1,124 @@
+ul, ol, li, div, body,
+	input, p, th, td, dl,
+	dt, dd,form, button, h1,
+	h2, h3, h4, h5, h6,em,i{
+		padding:0;
+		margin:0;
+		font-family: "微软雅黑";
+	}
+
+.login{
+	 width: 1366px;
+	 height: 870px;
+	 margin:0 auto;
+	 position: relative;
+	 background:url("../images/background.jpg") no-repeat center fixed;
+          
+}
+.con{
+	width: 960px;
+	margin:0 auto;
+	position: absolute;
+	top:245px;
+	left:270px;
+}
+.head{
+	color: dodgerblue;
+	font-size: 40px; 
+}
+.left{
+	width: 450px;
+	float: left;
+}	
+	
+.right{
+	width: 410px;
+	float: left;
+	padding-left:50px;
+}	
+.left1,
+.lowin-btn{
+	margin-top:40px;
+}
+.left2,
+#left3{
+	margin-top:20px;
+}
+
+#left3{
+	
+	font-size: 18px;
+	color: #dbdbdb;
+}
+#left3 a{
+	text-decoration: none;
+
+}
+.left1 a img,
+.left2 a img{
+	width: 25px;
+}
+
+#left3 span:hover{
+	color: black;
+}
+#left3 span{
+	color: dodgerblue;
+	margin-left: 187px;
+}
+.center{
+	width: 10px0;
+	float: left;
+}
+
+.right1{
+	font-size:22px;
+	color: #dbdbdb;
+}
+.right1 a{
+	text-decoration: none;
+}
+.right1 span{
+	font-size: 22px;
+	color: dodgerblue;
+}
+.right1 :hover{
+	color:black;
+}
+.right2{
+	margin-top:40px;
+	height: 250px;
+}
+.right3{
+	font-size: 25px;
+	color: #dbdbdb;
+}
+.name{
+	font-size: 18px;
+	width: 350px;
+	/*height: 48px;*/
+	border-bottom:1px solid #dbdbdb;
+	border-top: 0px;
+	border-right: 0px;
+	border-left: 0px;
+	margin: 20px;
+	color: #B7B5B9;
+	outline: none;
+	padding-bottom:8px;
+}
+.checkbox{
+	width: 20px;
+	height: 20px;
+	margin-right: 12px
+}
+.left .lowin-btn {
+	width: 380px;
+	text-align: center;
+	border:0;
+	outline: none;
+	background: transparent;
+	text-align: center;
+	cursor: pointer;
+	padding-top: 10px;
+}
+

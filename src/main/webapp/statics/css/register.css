@@ -1,0 +1,93 @@
+/*背景图部分*/
+ul, ol, li, div, body,
+	input, p, th, td, dl,
+	dt, dd,form, button, h1,
+	h2, h3, h4, h5, h6,em,i{
+		padding:0;
+		margin:0;
+	}
+i{
+		font-style: normal;
+	}
+.register{
+	width: 1366px;
+	height: 870px;
+	margin:0 auto;
+	background: url(../images/register.jpg) no-repeat center fixed;
+	position: relative;
+}
+.con{
+	width: 960px;
+	position: absolute;
+	top:210px;
+	left:180px;
+}
+/*左侧欢迎注册界面*/
+.regist-left{
+	width: 450px;
+	float: left;
+}
+.regist-left h1,
+.regist-left h4{
+	color: #3d9afe;
+	display: inline-block;
+	font-family: "微软雅黑";
+	font-weight: 500;
+}
+.regist-left h1{
+	font-size: 34px;
+}
+
+.regist-left h4{
+	font-size: 20px;
+}
+.regist-left .reg-img{
+	margin-top:25px;
+	width: 100%;
+	cursor: pointer;
+}
+
+/*右侧注册表单界面*/
+#regist-right{
+	width: 400px;
+	float: right;
+	margin-top:5%;
+}
+.reg-a img{
+	width: 22px;
+}
+.reg-a{
+	margin-bottom: 35px;
+	
+}
+.reg-a input{
+	font-family: "微软雅黑";
+	font-size: 16px;
+	color: #b7b5b9;
+	outline: none;
+	border:0;
+	padding-left: 15px;
+	padding-bottom: 3px;
+	width: 333px;
+	border-bottom: solid 1px #d6d3d6;
+}
+.zhuce{
+	border:0;
+	outline: none;
+	background: transparent;
+	cursor: pointer;
+}
+
+
+/*点击未填写出现感叹号*/
+#regist-right i{
+		line-height: 28px;
+	    font-size: 10px;
+	    color: #d00000;
+	    margin-top: 8px;
+	    display: inline-block;
+	    margin-bottom: -7px;
+	    font-weight: 700;
+	    background: url(../images/icon-a-error-icon.png) no-repeat left center;
+	    padding-left: 18px;
+}

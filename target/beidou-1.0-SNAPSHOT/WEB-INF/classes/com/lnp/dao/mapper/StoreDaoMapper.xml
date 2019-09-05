@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 设置为IUserDao接口方法提供sql语句配置 -->
+<mapper namespace="com.lnp.dao.StoreDao">
+
+    <select id="findStore" resultType="com.lnp.entity.StoreInformation">
+        select * from store_information
+        <trim prefix="where" prefixOverrides="and | or">
+            <if test="storeId != null and storeId != ''">
+                and storeId = #{storeId}
+            </if>
+            <if test="storeName != null and storeName != ''">
+                and storeName like CONCAT ('%',#{storeName},'%')
+            </if>
+            <if test="storeOwner != null and storeOwner != ''">
+                and storeOwner = #{storeOwner}
+            </if>
+            <if test="contactWay != null and contactWay != ''">
+                and contactWay like CONCAT ('%',#{contactWay},'%')
+            </if>
+            <if test="shipAddress != null and shipAddress != ''">
+                and shipAddress like CONCAT ('%',#{shipAddress},'%')
+            </if>
+            and fake=1
+        </trim>
+        LIMIT #{pageIndex},#{pagesize}
+    </select>
+
+    <select id="findStoreCount" resultType="int">
+        select count(1) from store_information
+        <trim prefix="where" prefixOverrides="and | or">
+            <if test="storeId != null and storeId != ''">
+                and storeId = #{storeId}
+            </if>
+            <if test="storeName != null and storeName != ''">
+                and storeName like CONCAT ('%',#{storeName},'%')
+            </if>
+            <if test="storeOwner != null and storeOwner != ''">
+                and storeOwner = #{storeOwner}
+            </if>
+            <if test="contactWay != null and contactWay != ''">
+                and contactWay like CONCAT ('%',#{contactWay},'%')
+            </if>
+            <if test="shipAddress != null and shipAddress != ''">
+                and shipAddress like CONCAT ('%',#{shipAddress},'%')
+            </if>
+            and fake=1
+        </trim>
+    </select>
+
+    <insert id="addStore" parameterType="StoreInformation">
+        insert into store_information(storeName,storeOwner,contactWay,shipAddress,fake,username) values(#{storeName},#{storeOwner},#{contactWay},#{shipAddress},#{fake},#{username});
+    </insert>
+
+    <update id="updateStore" parameterType="StoreInformation">
+        update store_information
+        <trim prefix="set" suffixOverrides="," suffix="where storeId=#{storeId}">
+            <if test="storeName != null">storeName=#{storeName},</if>
+            <if test="storeOwner != null">storeOwner=#{storeOwner},</if>
+            <if test="contactWay != null">contactWay=#{contactWay},</if>
+            <if test="shipAddress != null">shipAddress=#{shipAddress}</if>
+        </trim>
+    </update>
+
+    <select id="updateStoreById" resultType="StoreInformation">
+        select * from store_information where storeId = #{storeId}
+    </select>
+
+    <delete id="deleteStore" >
+        delete from store_information where storeId=#{storeId}
+    </delete>
+
+    <select id="findStoreAll" resultType="StoreInformation">
+        select * from store_information where fake=1
+    </select>
+
+    <select id="findStoreFake" resultType="StoreInformation">
+        select * from store_information where fake=0
+        LIMIT #{pageIndex},#{pagesize}
+    </select>
+
+    <select id="findStoreFakeCount" resultType="int">
+        select count(*) from store_information where fake=0
+    </select>
+
+    <update id="updateFake" >
+        update store_information set fake=1 where storeId=#{storeId}
+    </update>
+
+    <select id="findStoreForMe" resultType="StoreInformation">
+        select *,(select agentMoney from agent_information where store_information.storeId=agent_information.storeId) agentMoney from store_information where username=#{username} and fake=1
+    </select>
+
+</mapper>

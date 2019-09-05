@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 设置为IUserDao接口方法提供sql语句配置 -->
+<mapper namespace="com.lnp.dao.AfterOrderDao">
+
+
+    <delete id="deleteAfterOrder" >
+       delete from afterorder where orderId=#{orderId}
+    </delete>
+
+    <delete id="deleteRecycle" >
+       delete from recycle_order where orderId=#{orderId}
+    </delete>
+
+    <delete id="deleteAllRecycle">
+        delete from recycle_order
+    </delete>
+
+    <select id="findRecycleOrder" resultType="RecycleOrder" parameterType="String">
+        select * from recycle_order where orderId=#{orderId}
+    </select>
+
+    <insert id="addAfterOrder" parameterType="com.lnp.entity.AfterOrder">
+        insert into afterorder(orderId,tradeName,tradePrices,tradeOfGoods,AmountPaid,platformId,consigName,accountName,phoneNumber,receiverAddress,orderTime,storeId,recycleContent)
+        values(#{orderId},#{tradeName},#{tradePrices},#{tradeOfGoods},#{AmountPaid},#{platformId},#{consigName},#{accountName},#{phoneNumber},#{receiverAddress},#{orderTime},#{storeId},#{recycleContent});
+    </insert>
+
+    <select id="findRecycle" resultType="com.lnp.entity.OrderInformation">
+        select a.orderId,a.tradeName,a.tradePrices,a.tradeOfGoods,(select b.statusMessages from order_status b where b.orderStatusId=a.orderStatus) as statusName,(select storeName from store_information c where c.storeId=a.storeId ) as storeName,a.amountPaid,a.consigName
+        from recycle_order a
+        <trim prefix="where" prefixOverrides="and | or">
+            <if test="orderId != null and orderId != ''">
+                and a.orderId like CONCAT ('%',#{orderId},'%')
+            </if>
+            <if test="orderTime != null and orderTime != ''">
+                and a.orderTime = #{orderTime}
+            </if>
+            <if test="tradeName != null and tradeName != ''">
+                and a.tradeName like CONCAT ('%',#{tradeName},'%')
+            </if>
+            <if test="consigName != null and consigName != ''">
+                and a.consigName = #{consigName}
+            </if>
+            <if test="receiverAddress != null and receiverAddress != ''">
+                and a.receiverAddress like CONCAT ('%',#{receiverAddress},'%')
+            </if>
+            <if test="accountName != null and accountName != ''">
+                and a.accountName = #{accountName}
+            </if>
+            <if test="storeId != null and storeId != ''">
+                and a.storeId = #{storeId}
+            </if>
+        </trim>
+        LIMIT #{pageIndex},#{pagesize}
+    </select>
+    <select id="findRecycleCount" resultType="int">
+        select count(1) from recycle_order a
+        <trim prefix="where" prefixOverrides="and | or">
+            <if test="orderId != null and orderId != ''">
+                and a.orderId like CONCAT ('%',#{orderId},'%')
+            </if>
+            <if test="orderTime != null and orderTime != ''">
+                and a.orderTime = #{orderTime}
+            </if>
+            <if test="tradeName != null and tradeName != ''">
+                and a.tradeName like CONCAT ('%',#{tradeName},'%')
+            </if>
+            <if test="consigName != null and consigName != ''">
+                and a.consigName = #{consigName}
+            </if>
+            <if test="receiverAddress != null and receiverAddress != ''">
+                and a.receiverAddress like CONCAT ('%',#{receiverAddress},'%')
+            </if>
+            <if test="accountName != null and accountName != ''">
+                and a.accountName = #{accountName}
+            </if>
+            <if test="storeId != null and storeId != ''">
+                and a.storeId = #{storeId}
+            </if>
+        </trim>
+    </select>
+
+
+</mapper>

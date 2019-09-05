@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 设置为IUserDao接口方法提供sql语句配置 -->
+<mapper namespace="com.lnp.dao.LogisticsDao">
+
+    <select id="findList" resultType="com.lnp.entity.LogisticsInformation">
+        select a.logisticsId,b.companyName as logisticsCompanyName,a.courierId,a.logisticsRoute,d.storeName as storeName,c.statusMessages as statusName,e.orderId
+        from logistics_information a,logistics_company b,order_status c,store_information d,order_information e
+        where a.logisticsCompanyId=b.companyId and a.storeId=d.storeId and a.statusId=c.orderStatusId and a.orderId=e.orderId and a.statusId != 4
+        <if test="logisticsId != null and logisticsId != 0">
+            and a.logisticsId=#{logisticsId}
+        </if>
+        <if test="courierId != null and courierId != ''">
+            and a.courierId like CONCAT ('%',#{courierId},'%')
+
+        </if>
+        <if test="storeId != null and storeId != 0">
+            and a.storeId=#{storeId}
+        </if>
+        <if test="statusId != null and statusId != 0">
+            and a.statusId=#{statusId}
+        </if>
+        <if test="orderId != null and orderId != ''">
+            and a.orderId like CONCAT ('%',#{orderId},'%')
+        </if>
+        LIMIT #{pageIndex},#{pagesize}
+    </select>
+
+    <select id="findListCount" resultType="int">
+        select count(1) from logistics_information a,logistics_company b,order_status c,store_information d,order_information e
+        where a.logisticsCompanyId=b.companyId and a.storeId=d.storeId and a.statusId=c.orderStatusId and a.orderId=e.orderId and a.statusId != 4
+        <if test="logisticsId != null and logisticsId != 0">
+            and a.logisticsId=#{logisticsId}
+        </if>
+        <if test="courierId != null and courierId != ''">
+            and a.courierId=#{courierId}
+        </if>
+        <if test="storeId != null and storeId != 0">
+            and a.storeId=#{storeId}
+        </if>
+        <if test="statusId != null and statusId != 0">
+            and a.statusId=#{statusId}
+        </if>
+        <if test="orderId != null and orderId != ''">
+            and a.orderId=#{orderId}
+        </if>
+    </select>
+
+    <select id="findStore" resultType="StoreInformation">
+        select * from store_information
+    </select>
+    
+    <select id="findStoreId" resultType="Integer">
+        select storeId from store_information where storeName=#{storeName}
+    </select>
+
+    <insert id="logisticsAdd" parameterType="LogisticsInformation">
+        insert into logistics_information (logisticsCompanyId,courierId,storeId,statusId,orderId) values (#{logisticsCompanyId},#{courierId},#{storeId},#{statusId},#{orderId});
+    </insert>
+
+    <update id="logisticsUpdate" parameterType="LogisticsInformation" >
+        update logistics_information
+        <trim prefix="set" suffixOverrides="," suffix="where logisticsId=#{logisticsId}">
+            <if test="logisticsCompanyId != null">logisticsCompanyId=#{logisticsCompanyId},</if>
+            <if test="courierId != null">courierId=#{courierId},</if>
+            <if test="storeId != null">storeId=#{storeId},</if>
+            <if test="statusId != null">statusId=#{statusId},</if>
+            <if test="orderId != null">orderId=#{orderId},</if>
+        </trim>
+    </update>
+
+    <select id="findLogisticsById" resultType="LogisticsInformation">
+        select * from logistics_information where logisticsId=#{logisticsId}
+    </select>
+
+    <delete id="logisticsDelete" >
+        DELETE FROM logistics_information WHERE orderId=#{orderId}
+    </delete>
+
+    <update id="updateLogStatus" >
+        update logistics_information set statusId=#{status} where orderId=#{orderId};
+    </update>
+
+</mapper>

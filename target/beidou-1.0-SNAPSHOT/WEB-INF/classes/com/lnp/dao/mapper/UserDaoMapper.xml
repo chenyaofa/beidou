@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 设置为IUserDao接口方法提供sql语句配置 -->
+<mapper namespace="com.lnp.dao.UserDao">
+
+    <select id="SelectUser" resultType="com.lnp.entity.UserInformation">
+        select * from user_information where (username=#{usernameOruserman} or userman=#{usernameOruserman}) and password=#{password};
+    </select>
+
+    <insert id="AddUser" parameterType="UserInformation">
+        insert into user_information (username,password,userman,creationTime,department,companyId)
+		values(#{username},#{password},#{userman},#{creationTime},#{department},#{companyId})
+    </insert>
+
+    <select id="findList" resultType="com.lnp.entity.OrderInformation">
+        select a.orderId,a.tradeName,a.tradePrices,a.tradeOfGoods,a.orderTime,a.orderTime as time,(select b.statusMessages from order_status b where b.orderStatusId=a.orderStatus) as statusName,(select storeName from store_information c where c.storeId=a.storeId ) as storeName,a.amountPaid,a.consigName
+        from order_information a
+        <trim prefix="where" prefixOverrides="and | or">
+            <if test="orderId != null and orderId != ''">
+                and a.orderId like CONCAT ('%',#{orderId},'%')
+            </if>
+            <if test="orderTime != null and orderTime != ''">
+                and a.orderTime = #{orderTime}
+            </if>
+            <if test="tradeName != null and tradeName != ''">
+                and a.tradeName like CONCAT ('%',#{tradeName},'%')
+            </if>
+            <if test="consigName != null and consigName != ''">
+                and a.consigName like CONCAT ('%',#{consigName},'%')
+            </if>
+            <if test="receiverAddress != null and receiverAddress != ''">
+                and a.receiverAddress like CONCAT ('%',#{receiverAddress},'%')
+            </if>
+            <if test="accountName != null and accountName != ''">
+                and a.accountName like CONCAT ('%',#{accountName},'%')
+            </if>
+            <if test="storeId != null and storeId != ''">
+                and a.storeId = #{storeId}
+            </if>
+        </trim>
+        ORDER BY orderTime DESC
+        LIMIT #{pageIndex},#{pagesize}
+    </select>
+    <select id="findCount" resultType="int">
+        select count(1) from order_information a
+        <trim prefix="where" prefixOverrides="and | or">
+            <if test="orderId != null and orderId != ''">
+                and a.orderId like CONCAT ('%',#{orderId},'%')
+            </if>
+            <if test="orderTime != null and orderTime != ''">
+                and a.orderTime = #{orderTime}
+            </if>
+            <if test="tradeName != null and tradeName != ''">
+                and a.tradeName like CONCAT ('%',#{tradeName},'%')
+            </if>
+            <if test="consigName != null and consigName != ''">
+                and a.consigName like CONCAT ('%',#{consigName},'%')
+            </if>
+            <if test="receiverAddress != null and receiverAddress != ''">
+                and a.receiverAddress like CONCAT ('%',#{receiverAddress},'%')
+            </if>
+            <if test="accountName != null and accountName != ''">
+                and a.accountName = #{accountName}
+            </if>
+            <if test="storeId != null and storeId != ''">
+                and a.storeId = #{storeId}
+            </if>
+        </trim>
+    </select>
+
+    <insert id="orderAdd" parameterType="OrderInformation">
+		insert into order_information (orderId,tradeName,tradePrices,tradeOfGoods,amountPaid,platformId,
+							consigName,accountName,phoneNumber,receiverAddress,orderTime,orderStatus,storeId,audit)
+				values(#{orderId},#{tradeName},#{tradePrices},#{tradeOfGoods},#{amountPaid},
+					   #{platformId},#{consigName},#{accountName},#{phoneNumber},#{receiverAddress},
+					   #{orderTime},#{orderStatus},#{storeId},#{audit})
+	</insert>
+
+    <select id="selectOrderId" resultType="int">
+        select count(1) from order_information where orderId=#{orderId};
+    </select>
+
+    <insert id="RecycleAdd" parameterType="OrderInformation">
+        insert into recycle_order(orderId,tradeName,tradePrices,tradeOfGoods,amountPaid,platformId,
+							consigName,accountName,phoneNumber,receiverAddress,orderTime,orderStatus,storeId)
+				values(#{orderId},#{tradeName},#{tradePrices},#{tradeOfGoods},#{amountPaid},
+					   #{platformId},#{consigName},#{accountName},#{phoneNumber},#{receiverAddress},
+					   #{orderTime},#{orderStatus},#{storeId})
+    </insert>
+
+    <update id="updateOrder" parameterType="OrderInformation">
+        update order_information
+        <trim prefix="set" suffixOverrides="," suffix="where orderId=#{orderId}">
+            <if test="orderId != null">orderId=#{orderId},</if>
+            <if test="tradeName != null">tradeName=#{tradeName},</if>
+            <if test="tradePrices != null">tradePrices=#{tradePrices},</if>
+            <if test="tradeOfGoods != null">tradeOfGoods=#{tradeOfGoods},</if>
+            <if test="amountPaid != null">amountPaid=#{amountPaid},</if>
+            <if test="platformId != null">platformId=#{platformId},</if>
+            <if test="consigName != null">consigName=#{consigName},</if>
+            <if test="accountName != null">accountName=#{accountName},</if>
+            <if test="phoneNumber != null">phoneNumber=#{phoneNumber},</if>
+            <if test="receiverAddress != null">receiverAddress=#{receiverAddress},</if>
+<!--            <if test="logisticsId != null">logisticsId=#{logisticsId},</if>-->
+            <if test="orderTime != null">orderTime=#{orderTime},</if>
+            <if test="orderStatus != null">orderStatus=#{orderStatus},</if>
+            <if test="storeId != null">storeId=#{storeId},</if>
+        </trim>
+    </update>
+
+    <delete id="deleteOrder" parameterType="String">
+		DELETE FROM order_information WHERE orderId=#{orderId}
+	</delete>
+
+    <select id="findUpdate" resultType="OrderInformation" parameterType="String">
+        select a.*,(select b.statusMessages from order_status b where b.orderStatusId=a.orderStatus) as statusName from order_information a where orderId=#{orderId}
+    </select>
+
+
+    <update id="updateOrderStatus" >
+        update order_information set orderStatus=#{orderStatus} where orderId=#{orderId}
+    </update>
+
+    <select id="findAllOrder" resultType="OrderInformation">
+        select a.orderId,a.tradeName,a.tradePrices,a.tradeOfGoods,(select b.statusMessages from order_status b where b.orderStatusId=a.orderStatus) as statusName,(select storeName from store_information c where c.storeId=a.storeId ) as storeName,a.amountPaid,a.consigName
+        from order_information a
+        <trim prefix="where" prefixOverrides="and | or">
+            <if test="orderStatus != null and orderStatus != ''">
+                and orderStatus = #{orderStatus}
+            </if>
+            <if test="orderTime != null and orderTime != ''">
+                and orderTime = #{orderTime}
+            </if>
+        </trim>
+        LIMIT #{pageIndex},#{pagesize}
+    </select>
+
+    <select id="findAllOrderCount" resultType="int">
+        select count(1) from order_information
+        <trim prefix="where" prefixOverrides="and | or">
+            <if test="orderStatus != null and orderStatus != ''">
+                and orderStatus = #{orderStatus}
+            </if>
+            <if test="orderTime != null and orderTime != ''">
+                and orderTime = #{orderTime}
+            </if>
+        </trim>
+    </select>
+
+
+
+    <select id="findOutOrder" resultType="com.lnp.entity.AfterOrder">
+        select a.orderId,a.tradeName,a.tradePrices,a.tradeOfGoods,a.recycleContent,a.orderTime,(select storeName from store_information c where c.storeId=a.storeId ) as storeName,a.amountPaid,a.consigName
+        from afterorder a
+        <trim prefix="where" prefixOverrides="and | or">
+            <if test="orderId != null and orderId != ''">
+                and a.orderId like CONCAT ('%',#{orderId},'%')
+            </if>
+            <if test="orderTime != null and orderTime != ''">
+                and a.orderTime = #{orderTime}
+            </if>
+            <if test="tradeName != null and tradeName != ''">
+                and a.tradeName like CONCAT ('%',#{tradeName},'%')
+            </if>
+            <if test="consigName != null and consigName != ''">
+                and a.consigName = #{consigName}
+            </if>
+            <if test="receiverAddress != null and receiverAddress != ''">
+                and a.receiverAddress like CONCAT ('%',#{receiverAddress},'%')
+            </if>
+            <if test="accountName != null and accountName != ''">
+                and a.accountName = #{accountName}
+            </if>
+            <if test="storeId != null and storeId != ''">
+                and a.storeId = #{storeId}
+            </if>
+        </trim>
+        LIMIT #{pageIndex},#{pagesize}
+    </select>
+    <select id="findOutOrderCount" resultType="int">
+        select count(1) from afterorder a
+        <trim prefix="where" prefixOverrides="and | or">
+            <if test="orderId != null and orderId != ''">
+                and a.orderId like CONCAT ('%',#{orderId},'%')
+            </if>
+            <if test="orderTime != null and orderTime != ''">
+                and a.orderTime = #{orderTime}
+            </if>
+            <if test="tradeName != null and tradeName != ''">
+                and a.tradeName like CONCAT ('%',#{tradeName},'%')
+            </if>
+            <if test="consigName != null and consigName != ''">
+                and a.consigName = #{consigName}
+            </if>
+            <if test="receiverAddress != null and receiverAddress != ''">
+                and a.receiverAddress like CONCAT ('%',#{receiverAddress},'%')
+            </if>
+            <if test="accountName != null and accountName != ''">
+                and a.accountName = #{accountName}
+            </if>
+            <if test="storeId != null and storeId != ''">
+                and a.storeId = #{storeId}
+            </if>
+        </trim>
+    </select>
+
+    <insert id="sanctionOrder" parameterType="OrderInformation">
+        insert into afterorder (orderId,tradeName,tradePrices,tradeOfGoods,amountPaid,platformId,
+							consigName,accountName,phoneNumber,receiverAddress,orderTime,recycleContent,storeId)
+				values(#{orderId},#{tradeName},#{tradePrices},#{tradeOfGoods},#{amountPaid},
+					   #{platformId},#{consigName},#{accountName},#{phoneNumber},#{receiverAddress},
+					   #{orderTime},#{recycleContent},#{storeId})
+    </insert>
+
+    <select id="goSanction" resultType="AfterOrder" >
+        select * from afterorder;
+    </select>
+
+
+    <select id="findUser" resultType="UserInformation">
+        select * from user_information
+        <trim prefix="where" prefixOverrides="and | or">
+            <if test="username != null and username != ''">
+                and username like CONCAT ('%',#{username},'%')
+            </if>
+            <if test="userman != null and userman != ''">
+                and userman like CONCAT ('%',#{userman},'%')
+            </if>
+            <if test="creationTime != null and creationTime != ''">
+                and creationTime = #{creationTime}
+            </if>
+            <if test="department != null and department != ''">
+                and department=#{department}
+            </if>
+        </trim>
+        LIMIT #{pageIndex},#{pagesize}
+    </select>
+
+    <select id="findUserCount" resultType="int">
+        select count(1) from user_information
+        <trim prefix="where" prefixOverrides="and | or">
+            <if test="username != null and username != ''">
+                and username like CONCAT ('%',#{username},'%')
+            </if>
+            <if test="userman != null and userman != ''">
+                and userman like CONCAT ('%',#{userman},'%')
+            </if>
+            <if test="creationTime != null and creationTime != ''">
+                and creationTime = #{creationTime}
+            </if>
+            <if test="department != null and department != ''">
+                and department=#{department}
+            </if>
+        </trim>
+    </select>
+
+    <delete id="deleteUser" >
+        delete from user_information where username=#{username}
+    </delete>
+
+
+
+</mapper>

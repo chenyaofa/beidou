@@ -1,0 +1,185 @@
+blockquote,
+body,
+button,
+dd,
+div,
+dl,
+dt,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+legend,
+li,
+ol,
+p,
+td,
+textarea,
+th,
+ul {
+	margin: 0;
+	padding: 0;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+}
+
+html {
+	font-family: "微软雅黑";
+	font: 14px 'Helvetica Neue', 'PingFang SC', STHeitiSC-Light, Helvetica, Arial, sans-serif;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%
+}
+ul,li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+
+/*主体内容*/
+.dingadd{
+	position: relative;
+}
+.conadd{
+	margin: 0 auto;
+}
+
+/*顶部logo布局开始*/
+.topadd{
+	width: 100%;
+	line-height: 60px;
+	background-color: #FFFFFF;
+	margin-left:10%;
+}
+.topadd img{
+	padding-top: 10px;
+}
+.topadd span{
+	font-size: 26px;
+	color: #0895d7;
+	padding-left: 30px;
+}
+
+/*中间内容部分*/
+.tianadd{
+	width: 100%;
+	height: 860px;
+	background: url(../images/dingdanjai.jpg) no-repeat;
+}
+/*标题-添加订单*/
+.moddle{
+	width: 1250px;
+	margin: 0 auto;
+}
+.ding-title{
+	height: 120px;
+	position: absolute;
+	top: 140px;
+	left:45%;
+	
+}
+.ding-title span{
+	font-size: 32px;
+	color: #FFFFFF;
+}
+.ding-title .xiao{
+	font-size: 20px;
+}
+
+/*具体表单内容*/
+.jia{
+	width: 1250px;
+	height: 615px;
+	background: #FFFFFF;
+	border-radius: 6px;
+	position: absolute;
+	top: 210px;
+	left: 18%;
+}
+.jia .jia-con{
+	width: 950px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+/*左侧订单信息*/
+.jia-con .con-left{
+	width: 450px;
+	/*height: 530px;*/
+
+	float: left;
+}
+.jia-con .con-left li input,.jia-con .con-right li input{
+	font-size: 15px;
+}
+
+
+.con-left li,
+.con-right li{
+	display: inline-block;
+	margin-top: 35px;
+	font-size: 18px;
+}
+.con-left li input,
+.con-right li input,
+.add-time{
+	width: 175px;
+	height: 27px;
+	outline: none;
+}
+
+.add-input{
+	width: 175px;
+	height: 27px;
+	outline: none;
+	/*margin-left: 275px;*/
+	margin-top: 20px;
+	margin: 0 auto;
+}
+
+/*右侧订单信息*/
+.jia-con .con-right{
+	width: 450px;
+	/*height: 530px;*/
+	float: right;
+} 
+.con-right li{
+	float: right;
+}
+
+/*确认添加订单信息*/
+.queren,
+.queren-a{
+	width: 950px;
+	position: absolute;
+	left: 38%;
+	top: 87%;
+}
+
+.queren input,
+.queren-a input{
+	width: 345px;
+	height: 55px;
+	border-radius: 4px;
+	font-size: 16px;
+	color: #FFFFFF;
+	background: #0897d8;
+	outline: none;
+	border: 0;
+}
+
+.queren a{
+	font-size: 16px;
+	color: #0897d8;
+	margin-left: 20px;
+}
+.queren-a a{
+	font-size: 16px;
+	color: purple;
+	margin-left: 20px;
+}
+
+
+
