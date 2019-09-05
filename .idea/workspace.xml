@@ -6,711 +6,8 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f58b2be3-8260-4801-a49b-50f652796202" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beidou.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lnp/controller/BaiDuMapApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lnp/controller/CommissionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lnp/controller/KdniaoTrackQueryAPI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lnp/controller/LogisticsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lnp/controller/PermissionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lnp/controller/RecycleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lnp/controller/StoreController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lnp/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lnp/dao/AfterOrderDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lnp/dao/CommissionDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lnp/dao/LogisticsDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lnp/dao/StoreDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lnp/dao/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lnp/dao/mapper/AfterOrderDaoMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lnp/dao/mapper/CommissionDaoMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lnp/dao/mapper/LogisticsDaoMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lnp/dao/mapper/StoreDaoMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lnp/dao/mapper/UserDaoMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lnp/entity/AfterOrder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lnp/entity/CommissionInformation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lnp/entity/LogisticsCompany.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lnp/entity/LogisticsInformation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lnp/entity/OrderInformation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lnp/entity/PermissionInformation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lnp/entity/RecycleOrder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lnp/entity/StoreInformation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lnp/entity/UserInformation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lnp/entity/WithdrawInformation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lnp/pachong/HTMLJavaScriptInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lnp/service/AfterOrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lnp/service/CommissionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lnp/service/FetchImgsUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lnp/service/LogisticsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lnp/service/StoreService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lnp/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lnp/service/impl/AfterOrderServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lnp/service/impl/CommissionServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lnp/service/impl/LogisticsServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lnp/service/impl/StoreServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lnp/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lnp/service/jsoupget.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lnp/util/PageSupport.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lnp/util/SysInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/AfterOrder.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/CommissionInfo.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/GetToken.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/LogisticsAdd.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/LogisticsInfo.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/LogisticsUpdate.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/MyStore.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/ONE.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/ONEE.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/ONEEE.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/Order_review.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/PermissionInfo.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/RecycleBin.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/ShenPi.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/StoreAdd.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/UserInfo.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/getAll.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login2.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/orderAdd.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/orderInfo.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/orderUpdate.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/register.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/register2.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/storeInfo.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/storeUpdate.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/tixian.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/tixianInfo.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/wuliu.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/My97DatePicker/WdatePicker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/My97DatePicker/calendar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/My97DatePicker/lang/en.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/My97DatePicker/lang/zh-cn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/My97DatePicker/lang/zh-tw.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/My97DatePicker/skin/WdatePicker.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/My97DatePicker/skin/datePicker.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/My97DatePicker/skin/default/datepicker.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/My97DatePicker/skin/default/img.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/My97DatePicker/skin/whyGreen/bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/My97DatePicker/skin/whyGreen/datepicker.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/My97DatePicker/skin/whyGreen/img.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/My97DatePicker/开发包/lang/en.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/My97DatePicker/开发包/lang/zh-cn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/My97DatePicker/开发包/lang/zh-tw.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/My97DatePicker/开发包/readme.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/My97DatePicker/开发包/skin/WdatePicker.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/My97DatePicker/开发包/skin/datePicker.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/My97DatePicker/开发包/skin/default/datepicker.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/My97DatePicker/开发包/skin/default/img.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/My97DatePicker/开发包/skin/whyGreen/bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/My97DatePicker/开发包/skin/whyGreen/datepicker.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/My97DatePicker/开发包/skin/whyGreen/img.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/distpicker.data.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/distpicker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/jquery-3.3.1/jquery-3.3.1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/jquery-3.3.1/jquery-3.3.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/jquery-3.3.1/jquery插件库.url" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/jquery-3.3.1/www.jq22.com.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/layer/layer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/layer/mobile/layer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/layer/mobile/need/layer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/layer/theme/default/icon-ext.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/layer/theme/default/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/layer/theme/default/layer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/layer/theme/default/loading-0.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/layer/theme/default/loading-1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/layer/theme/default/loading-2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/css/layui.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/css/layui.mobile.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/css/modules/code.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/css/modules/laydate/default/laydate.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/css/modules/layer/default/icon-ext.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/css/modules/layer/default/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/css/modules/layer/default/layer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/css/modules/layer/default/loading-0.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/css/modules/layer/default/loading-1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/css/modules/layer/default/loading-2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/font/iconfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/font/iconfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/font/iconfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/font/iconfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/font/iconfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/0.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/10.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/11.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/12.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/13.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/14.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/15.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/16.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/17.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/18.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/19.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/20.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/21.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/22.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/23.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/24.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/25.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/26.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/27.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/28.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/29.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/3.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/30.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/31.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/32.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/33.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/34.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/35.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/36.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/37.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/38.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/39.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/4.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/40.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/41.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/42.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/43.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/44.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/45.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/46.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/47.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/48.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/49.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/5.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/50.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/51.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/52.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/53.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/54.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/55.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/56.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/57.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/58.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/59.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/6.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/60.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/61.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/62.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/63.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/64.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/65.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/66.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/67.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/68.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/69.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/7.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/70.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/71.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/8.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/9.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/lay/modules/carousel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/lay/modules/code.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/lay/modules/colorpicker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/lay/modules/element.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/lay/modules/flow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/lay/modules/form.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/lay/modules/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/lay/modules/laydate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/lay/modules/layedit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/lay/modules/layer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/lay/modules/laypage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/lay/modules/laytpl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/lay/modules/mobile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/lay/modules/rate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/lay/modules/slider.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/lay/modules/table.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/lay/modules/transfer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/lay/modules/tree.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/lay/modules/upload.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/lay/modules/util.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/layui.all.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/layui.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/css/auth.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/css/auth1.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/css/dingdanjia.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/css/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/css/quanxian.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/css/register.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/css/storeadd.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/css/wuliu.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/css/wuliujia.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/css/xiala.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/images/01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/images/02.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/images/03.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/images/04.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/images/05.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/images/07.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/images/08.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/images/admin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/images/background.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/images/background1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/images/baobiao.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/images/bianji.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/images/cebulan.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/images/chakan.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/images/chaxun.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/images/clear.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/images/denglu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/images/department.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/images/dingdan.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/images/dingdanjai.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/images/erweima.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/images/fanhui.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/images/fengefu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/images/gaiji.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/images/grade.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/images/guoxing.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/images/heng.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/images/hengtiao.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/images/icon-a-error-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/images/junwu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/images/kefu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/images/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/images/mendian.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/images/minagzi.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/images/password.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/images/password1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/images/password2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/images/qiehuan.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/images/qingkong.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/images/quanbu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/images/qudiao.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/images/register.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/images/seach.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/images/shanchu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/images/shengdai.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/images/shidai.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/images/shouhuo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/images/shuzi.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/images/sou.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/images/sousuo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/images/submit.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/images/tianjia .png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/images/tijiao.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/images/tuxing.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/images/user name.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/images/user.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/images/user1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/images/wladd.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/images/xiala.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/images/xiandai.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/images/xinxi.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/images/xinzeng.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/images/xiugai.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/images/youbian.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/images/zhuce.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/images/zuobian.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/SqlMapConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/jdbc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/springMvc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/classes/SqlMapConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/classes/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/classes/com/lnp/controller/BaiDuMapApi.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/classes/com/lnp/controller/CommissionController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/classes/com/lnp/controller/KdniaoTrackQueryAPI.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/classes/com/lnp/controller/LogisticsController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/classes/com/lnp/controller/PermissionController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/classes/com/lnp/controller/RecycleController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/classes/com/lnp/controller/StoreController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/classes/com/lnp/controller/UserController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/classes/com/lnp/dao/AfterOrderDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/classes/com/lnp/dao/CommissionDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/classes/com/lnp/dao/LogisticsDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/classes/com/lnp/dao/StoreDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/classes/com/lnp/dao/UserDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/classes/com/lnp/dao/mapper/AfterOrderDaoMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/classes/com/lnp/dao/mapper/CommissionDaoMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/classes/com/lnp/dao/mapper/LogisticsDaoMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/classes/com/lnp/dao/mapper/StoreDaoMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/classes/com/lnp/dao/mapper/UserDaoMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/classes/com/lnp/entity/AfterOrder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/classes/com/lnp/entity/CommissionInformation.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/classes/com/lnp/entity/LogisticsCompany.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/classes/com/lnp/entity/LogisticsInformation.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/classes/com/lnp/entity/OrderInformation.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/classes/com/lnp/entity/PermissionInformation.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/classes/com/lnp/entity/RecycleOrder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/classes/com/lnp/entity/StoreInformation.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/classes/com/lnp/entity/UserInformation.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/classes/com/lnp/entity/WithdrawInformation.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/classes/com/lnp/pachong/HTMLJavaScriptInterface.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/classes/com/lnp/service/AfterOrderService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/classes/com/lnp/service/CommissionService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/classes/com/lnp/service/FetchImgsUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/classes/com/lnp/service/LogisticsService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/classes/com/lnp/service/StoreService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/classes/com/lnp/service/UserService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/classes/com/lnp/service/impl/AfterOrderServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/classes/com/lnp/service/impl/CommissionServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/classes/com/lnp/service/impl/LogisticsServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/classes/com/lnp/service/impl/StoreServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/classes/com/lnp/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/classes/com/lnp/service/jsoupget.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/classes/com/lnp/util/PageSupport.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/classes/com/lnp/util/SysInterceptor.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/classes/jdbc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/classes/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/classes/springMvc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/jsp/AfterOrder.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/jsp/CommissionInfo.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/jsp/GetToken.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/jsp/LogisticsAdd.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/jsp/LogisticsInfo.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/jsp/LogisticsUpdate.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/jsp/MyStore.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/jsp/ONE.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/jsp/ONEE.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/jsp/ONEEE.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/jsp/Order_review.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/jsp/PermissionInfo.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/jsp/RecycleBin.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/jsp/ShenPi.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/jsp/StoreAdd.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/jsp/UserInfo.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/jsp/getAll.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/jsp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/jsp/login.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/jsp/login2.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/jsp/orderAdd.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/jsp/orderInfo.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/jsp/orderUpdate.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/jsp/register.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/jsp/register2.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/jsp/storeInfo.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/jsp/storeUpdate.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/jsp/tixian.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/jsp/tixianInfo.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/jsp/wuliu.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/lib/aopalliance-1.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/lib/aspectjweaver-1.8.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/lib/biz-biz.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/lib/biz-sources-biz-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/lib/commons-beanutils-1.7.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/lib/commons-collections-3.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/lib/commons-dbcp-1.2.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/lib/commons-fileupload-1.2.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/lib/commons-io-2.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/lib/commons-lang-2.5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/lib/commons-logging-1.1.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/lib/commons-pool-1.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/lib/druid-1.0.12.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/lib/ezmorph-1.0.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/lib/fastjson-1.1.28.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/lib/freemarker-2.3.23.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/lib/jackson-annotations-2.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/lib/jackson-core-2.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/lib/jackson-core-asl-1.9.13.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/lib/jackson-databind-2.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/lib/jackson-mapper-asl-1.9.13.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/lib/json-lib-2.4-jdk15.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/lib/jsoup-1.11.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/lib/jstl-1.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/lib/jxl-2.6.12.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/lib/log4j-1.2.17.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/lib/mybatis-3.2.8.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/lib/mybatis-spring-1.2.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/lib/mysql-connector-java-8.0.17.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/lib/protobuf-java-3.6.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/lib/slf4j-api-1.6.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/lib/slf4j-log4j12-1.6.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/lib/spring-aop-4.1.4.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/lib/spring-beans-4.1.4.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/lib/spring-context-4.1.4.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/lib/spring-core-4.1.4.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/lib/spring-expression-4.1.4.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/lib/spring-jdbc-4.1.4.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/lib/spring-tx-4.1.4.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/lib/spring-web-4.1.4.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/lib/spring-webmvc-4.1.4.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/js/My97DatePicker/WdatePicker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/js/My97DatePicker/calendar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/js/My97DatePicker/lang/en.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/js/My97DatePicker/lang/zh-cn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/js/My97DatePicker/lang/zh-tw.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/js/My97DatePicker/skin/WdatePicker.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/js/My97DatePicker/skin/datePicker.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/js/My97DatePicker/skin/default/datepicker.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/js/My97DatePicker/skin/default/img.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/js/My97DatePicker/skin/whyGreen/bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/js/My97DatePicker/skin/whyGreen/datepicker.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/js/My97DatePicker/skin/whyGreen/img.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/js/My97DatePicker/开发包/lang/en.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/js/My97DatePicker/开发包/lang/zh-cn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/js/My97DatePicker/开发包/lang/zh-tw.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/js/My97DatePicker/开发包/readme.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/js/My97DatePicker/开发包/skin/WdatePicker.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/js/My97DatePicker/开发包/skin/datePicker.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/js/My97DatePicker/开发包/skin/default/datepicker.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/js/My97DatePicker/开发包/skin/default/img.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/js/My97DatePicker/开发包/skin/whyGreen/bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/js/My97DatePicker/开发包/skin/whyGreen/datepicker.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/js/My97DatePicker/开发包/skin/whyGreen/img.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/js/distpicker.data.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/js/distpicker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/js/jquery-3.3.1/jquery-3.3.1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/js/jquery-3.3.1/jquery-3.3.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/js/jquery-3.3.1/jquery插件库.url" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/js/jquery-3.3.1/www.jq22.com.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/js/layer/layer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/js/layer/mobile/layer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/js/layer/mobile/need/layer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/js/layer/theme/default/icon-ext.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/js/layer/theme/default/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/js/layer/theme/default/layer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/js/layer/theme/default/loading-0.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/js/layer/theme/default/loading-1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/js/layer/theme/default/loading-2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/css/layui.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/css/layui.mobile.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/css/modules/code.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/css/modules/laydate/default/laydate.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/css/modules/layer/default/icon-ext.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/css/modules/layer/default/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/css/modules/layer/default/layer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/css/modules/layer/default/loading-0.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/css/modules/layer/default/loading-1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/css/modules/layer/default/loading-2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/font/iconfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/font/iconfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/font/iconfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/font/iconfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/font/iconfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/images/face/0.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/images/face/1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/images/face/10.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/images/face/11.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/images/face/12.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/images/face/13.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/images/face/14.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/images/face/15.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/images/face/16.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/images/face/17.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/images/face/18.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/images/face/19.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/images/face/2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/images/face/20.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/images/face/21.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/images/face/22.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/images/face/23.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/images/face/24.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/images/face/25.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/images/face/26.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/images/face/27.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/images/face/28.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/images/face/29.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/images/face/3.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/images/face/30.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/images/face/31.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/images/face/32.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/images/face/33.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/images/face/34.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/images/face/35.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/images/face/36.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/images/face/37.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/images/face/38.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/images/face/39.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/images/face/4.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/images/face/40.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/images/face/41.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/images/face/42.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/images/face/43.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/images/face/44.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/images/face/45.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/images/face/46.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/images/face/47.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/images/face/48.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/images/face/49.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/images/face/5.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/images/face/50.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/images/face/51.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/images/face/52.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/images/face/53.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/images/face/54.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/images/face/55.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/images/face/56.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/images/face/57.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/images/face/58.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/images/face/59.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/images/face/6.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/images/face/60.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/images/face/61.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/images/face/62.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/images/face/63.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/images/face/64.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/images/face/65.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/images/face/66.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/images/face/67.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/images/face/68.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/images/face/69.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/images/face/7.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/images/face/70.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/images/face/71.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/images/face/8.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/images/face/9.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/lay/modules/carousel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/lay/modules/code.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/lay/modules/colorpicker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/lay/modules/element.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/lay/modules/flow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/lay/modules/form.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/lay/modules/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/lay/modules/laydate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/lay/modules/layedit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/lay/modules/layer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/lay/modules/laypage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/lay/modules/laytpl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/lay/modules/mobile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/lay/modules/rate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/lay/modules/slider.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/lay/modules/table.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/lay/modules/transfer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/lay/modules/tree.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/lay/modules/upload.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/lay/modules/util.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/layui.all.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/layui/layui.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/statics/css/auth.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/statics/css/auth1.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/statics/css/dingdanjia.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/statics/css/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/statics/css/quanxian.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/statics/css/register.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/statics/css/storeadd.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/statics/css/wuliu.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/statics/css/wuliujia.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/statics/css/xiala.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/statics/images/01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/statics/images/02.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/statics/images/03.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/statics/images/04.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/statics/images/05.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/statics/images/07.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/statics/images/08.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/statics/images/admin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/statics/images/background.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/statics/images/background1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/statics/images/baobiao.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/statics/images/bianji.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/statics/images/cebulan.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/statics/images/chakan.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/statics/images/chaxun.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/statics/images/clear.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/statics/images/denglu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/statics/images/department.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/statics/images/dingdan.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/statics/images/dingdanjai.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/statics/images/erweima.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/statics/images/fanhui.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/statics/images/fengefu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/statics/images/gaiji.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/statics/images/grade.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/statics/images/guoxing.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/statics/images/heng.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/statics/images/hengtiao.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/statics/images/icon-a-error-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/statics/images/junwu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/statics/images/kefu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/statics/images/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/statics/images/mendian.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/statics/images/minagzi.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/statics/images/password.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/statics/images/password1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/statics/images/password2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/statics/images/qiehuan.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/statics/images/qingkong.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/statics/images/quanbu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/statics/images/qudiao.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/statics/images/register.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/statics/images/seach.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/statics/images/shanchu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/statics/images/shengdai.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/statics/images/shidai.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/statics/images/shouhuo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/statics/images/shuzi.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/statics/images/sou.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/statics/images/sousuo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/statics/images/submit.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/statics/images/tianjia .png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/statics/images/tijiao.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/statics/images/tuxing.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/statics/images/user name.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/statics/images/user.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/statics/images/user1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/statics/images/wladd.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/statics/images/xiala.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/statics/images/xiandai.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/statics/images/xinxi.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/statics/images/xinzeng.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/statics/images/xiugai.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/statics/images/youbian.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/statics/images/zhuce.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/beidou-1.0-SNAPSHOT/statics/images/zuobian.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/SqlMapConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lnp/controller/BaiDuMapApi.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lnp/controller/CommissionController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lnp/controller/KdniaoTrackQueryAPI.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lnp/controller/LogisticsController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lnp/controller/PermissionController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lnp/controller/RecycleController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lnp/controller/StoreController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lnp/controller/UserController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lnp/dao/AfterOrderDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lnp/dao/CommissionDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lnp/dao/LogisticsDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lnp/dao/StoreDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lnp/dao/UserDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lnp/dao/mapper/AfterOrderDaoMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lnp/dao/mapper/CommissionDaoMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lnp/dao/mapper/LogisticsDaoMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lnp/dao/mapper/StoreDaoMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lnp/dao/mapper/UserDaoMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lnp/entity/AfterOrder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lnp/entity/CommissionInformation.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lnp/entity/LogisticsCompany.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lnp/entity/LogisticsInformation.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lnp/entity/OrderInformation.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lnp/entity/PermissionInformation.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lnp/entity/RecycleOrder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lnp/entity/StoreInformation.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lnp/entity/UserInformation.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lnp/entity/WithdrawInformation.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lnp/pachong/HTMLJavaScriptInterface.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lnp/service/AfterOrderService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lnp/service/CommissionService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lnp/service/FetchImgsUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lnp/service/LogisticsService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lnp/service/StoreService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lnp/service/UserService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lnp/service/impl/AfterOrderServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lnp/service/impl/CommissionServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lnp/service/impl/LogisticsServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lnp/service/impl/StoreServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lnp/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lnp/service/jsoupget.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lnp/util/PageSupport.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/lnp/util/SysInterceptor.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/jdbc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/springMvc.xml" afterDir="false" />
+    <list default="true" id="f58b2be3-8260-4801-a49b-50f652796202" name="Default Changelist" comment="2019.9.5gogogo">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -744,7 +41,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/wuliu.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="396">
-              <caret line="59" column="46" lean-forward="true" selection-start-line="59" selection-start-column="46" selection-end-line="59" selection-end-column="46" />
+              <caret line="80" column="36" lean-forward="true" selection-start-line="80" selection-start-column="36" selection-end-line="80" selection-end-column="36" />
               <folding>
                 <element signature="n#style#0;n#a#0;n#div#0;n#div#1;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -921,8 +218,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="645" />
-    <option name="y" value="48" />
+    <option name="x" value="608" />
+    <option name="y" value="35" />
     <option name="width" value="1289" />
     <option name="height" value="949" />
   </component>
@@ -1561,17 +858,26 @@
       <workItem from="1567508432259" duration="170000" />
       <workItem from="1567557658423" duration="8776000" />
       <workItem from="1567575087715" duration="8511000" />
-      <workItem from="1567643459022" duration="18017000" />
+      <workItem from="1567643459022" duration="19375000" />
     </task>
+    <task id="LOCAL-00001" summary="2019.9.5gogogo">
+      <created>1567673628500</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1567673628500</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1590999000" />
+    <option name="totallyTimeSpent" value="1592357000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="645" y="48" width="1289" height="949" extended-state="0" />
+    <frame x="608" y="35" width="1289" height="949" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" x="942" y="132" width="335" height="794" id="Project" order="0" visible="true" weight="0.32058585" />
+      <window_info content_ui="combo" x="942" y="132" width="335" height="794" id="Project" order="0" visible="true" weight="0.32058585" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1581,7 +887,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32843137" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.26838234" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.4219089" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.34994584" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1592,8 +898,8 @@
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50053304" side_tool="true" weight="0.38140643" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info anchor="bottom" id="Version Control" order="13" />
-      <window_info anchor="bottom" id="Messages" order="14" weight="0.28060672" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.32883435" />
+      <window_info anchor="bottom" id="Messages" order="14" weight="0.2797546" />
       <window_info anchor="bottom" id="Spring" order="15" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24840085" />
@@ -1611,7 +917,8 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="2019.9.5gogogo" />
+    <option name="LAST_COMMIT_MESSAGE" value="2019.9.5gogogo" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -2003,7 +1310,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/wuliu.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
-          <caret line="59" column="46" lean-forward="true" selection-start-line="59" selection-start-column="46" selection-end-line="59" selection-end-column="46" />
+          <caret line="80" column="36" lean-forward="true" selection-start-line="80" selection-start-column="36" selection-end-line="80" selection-end-column="36" />
           <folding>
             <element signature="n#style#0;n#a#0;n#div#0;n#div#1;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
